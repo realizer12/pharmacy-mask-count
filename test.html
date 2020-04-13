@@ -1,0 +1,32 @@
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
+
+</head>
+<script>
+
+$.getJSON('new_pharmacy.json', function(data) {
+            
+            // var myJSON = JSON.stringify(data);
+
+            // $(data).each(function(){
+
+            //     //이 경우의 this는 mData라는 객체를 의미한다. 					
+                
+            //    console.log(this.latitude);
+            // });
+
+            console.log(data.length);
+            // for(var i=0; i<data.length; i++){
+                
+
+            //     data.length;
+            //     console.log(i+"번"+data.latitude);
+
+            // }
+        });
+
+</script>
+
+
+</html>

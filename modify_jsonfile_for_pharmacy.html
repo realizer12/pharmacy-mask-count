@@ -1,0 +1,59 @@
+<html>
+<head>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
+
+    <script>
+    
+    $(document).ready(function() { 
+       
+        var count=0;
+        var json =[];
+        $.getJSON('seprate.json', function(data) { 
+       
+            var find="화성시";
+            var find1="오산시";
+
+            // for(var i=0; i<data.length; i++){
+
+
+            //     if(data[i].address.indexOf(find) == -1 && data[i].address.indexOf(find1)==-1){
+                        
+            //           delete data[i];
+                      
+            //     }else{
+
+            //         json.push(data[i]);
+            //     }
+
+            // }
+           
+           //alert(json.length);
+
+          
+           for(var i=0; i<data.length; i++){
+
+                data[i].market_uid=i+1;
+           }
+
+
+           $('#show_result').html(JSON.stringify(data));
+        });
+
+    });
+    </script>
+
+  
+
+</head>
+
+<body>
+
+<div id="show_result"></div>
+
+
+</body>
+
+
+
+</html>

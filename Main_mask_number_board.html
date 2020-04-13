@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    
+    <title>마스크 현황 판</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  
+    <link rel="stylesheet" type="text/css" href="entire_style.css">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
+                                                                                                      
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=nt1t7ew7v5&submodules=geocoder"></script>
+   
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=6e314bc544090fc9e45ddc066ba8e1e9&libraries=services"></script>
+
+</head>
+<body>
+
+  <!-- <div id="entire_screen_for_notice" ></div> -->
+  <div id="map">
+   
+    <div id="top-bar">
+    <span id="site_title">오산, 화성 마스크 현황 판</span>
+    <div id="show_my_location_btn"> 내 주변 보기</div>
+   
+  </div>
+   
+  <div class="search">
+    <input type="text" id="searchTerm" class="searchTerm" value=""  placeholder="검색할  위치를 입력하세요  (*오산, 화성 지역만 가능*)">
+    <button id="searchButton" type="submit" class="searchButton">
+     <i class="fa fa-search"></i>
+   </button>
+ </div>
+
+</div>
+   
+
+
+<!--지도 관련  js 코드  -->
+<script type="text/javascript" src="map_work.js"></script>
+
+
+</body>
+</html>
+
